@@ -6,6 +6,10 @@ export default {
       container: {
         center: true,
       },
+      colors: {
+        pimary: "#6b705c",
+        secondary: "#dbd0bd",
+      },
     },
   },
   plugins: [],
