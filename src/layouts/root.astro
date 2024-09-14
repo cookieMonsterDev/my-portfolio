@@ -1,15 +1,15 @@
 ---
-  const { title } = Astro.props;
+  const { title = "Mykhailo Toporkov" } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="en" class="text-foreground">
   <head>
     <meta charset="utf-8">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{title || "Mykhailo Toporkov"}</title>
+    <title>{title}</title>
   </head>
-  <body class="w-screen min-h-screen bg-pimary">
+  <body class="w-screen min-h-screen bg-brown-1">
     <main class="container h-full p-4 md:py-8 md:px-0">
       <slot />
     </main>

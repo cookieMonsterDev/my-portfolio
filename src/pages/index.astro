@@ -1,125 +1,63 @@
 ---
-import RootLayout from '../layouts/root.astro'
+import RootLayout from "../layouts/root.astro"
+
+import Email from "../components/email-icon.astro"
+import GitHub from "../components/github-icon.astro"
+import LinkedIn from "../components/linkedin-icon.astro"
+import Telegram from "../components/telegram-icon.astro"
+import WhatsApp from '../components/whatsapp-icon.astro'
+
+
+
+const socials = [
+  { title: "Email", href: "mailto:mykhailo.toporkov@gmail.com", icon: Email },
+  { title: "LinkedIn", href: "https://www.linkedin.com/in/mykhailo-toporkov/", icon: LinkedIn },
+  { title: "GitHub", href: "https://github.com/cookieMonsterDev", icon: GitHub },
+  { title: "Telegram", href: "https://t.me/Mykhailo_Toporkov", icon: Telegram },
+  { title: "Telegram", href: "https://wa.me/380960503348", icon: WhatsApp },
+];
 ---
 
 <RootLayout>
-	<h1 class="mb-4 text-center text-secondary font-bold text-3xl">Mykhailo Toporkov / Full-stack Developer</h1>
-	<div class="grid gap-4 grid-cols-3">	
-		<fieldset id="about" class="pt-2 pb-4 px-4 border border-secondary rounded-md col-span-3 md:col-span-2">
-			<legend class="px-2 text-secondary font-bold text-2xl">About</legend>
-			<p class="text-secondary/80 font-semibold">
-				Hi! I'm Mykhailo. I have over 3+ years of experience in the IT sphere. My journey began as a mere QA
-				engineer, and now I can proudly call myself a Full-stack Developer. My experience speaks for itself; I
-				have knowledge not only about developing products but also about testing them, which is a
-				significant advantage. I believe this background helps me make fewer bugs, or at least I hope so!
-				Throughout these years, I have worked with many technologies, some of which are listed below. My
-				main plan for the future is to continue growing and developing myself further as a developer. I hope
-				this small introduction helps you get to know me better.
-			</p>
-		</fieldset>
-
-
-		<fieldset id="socials" class="pt-2 pb-4 px-4 border border-secondary rounded-md col-span-3 md:col-span-1">
-			<legend class="px-2 text-secondary font-bold text-2xl">Socials</legend>
-		</fieldset>
-
-
-		<fieldset id="skills" class="pt-2 pb-4 px-4 border border-secondary rounded-md col-span-3 md:col-span-1">
-			<legend class="px-2 text-secondary font-bold text-2xl">Skills</legend>
-		</fieldset>
-
-
-		<fieldset id="experience" class="pt-2 pb-4 px-4 border border-secondary rounded-md col-span-3 md:col-span-2">
-			<legend class="px-2 text-secondary font-bold text-2xl">Experience</legend>
-			<ul class="list-disc space-y-4">
-
-				<li class="flex gap-2 flex-col md:flex-row">
-					<div class="min-w-72 flex flex-col">
-						<span class=" text-secondary/80 text-lg font-semibold">Frontend Developer · InDevLab</span>
-						<span class="text-secondary/50 text-md font-medium">Mar 2024 - Presen</span>
-					</div>
-					<p class="text-secondary/80">
-						Working on numerous projects that often required complex animations and
-						innovative architectural approaches. Such as interactive dashboards
-						(CMS), landing pages with numerous animations etc.
-					</p>
-				</li>
-
-				<li class="flex gap-2 flex-col md:flex-row">
-					<div class="min-w-72 flex flex-col">
-						<span class=" text-secondary/80 text-lg font-semibold">Full-stack Developer · Freelance</span>
-						<span class="text-secondary/50 text-md font-medium">Nov 2023 - Mar 2024</span>
-					</div>
-					<p class="text-secondary/80">
-						Mostly worked on one time tasks via Upwork.
-					</p>
-				</li>
-
-				<li class="flex gap-2 flex-col md:flex-row">
-					<div class="min-w-72 flex flex-col">
-						<span class=" text-secondary/80 text-lg font-semibold">Full-stack Developer · CubeX</span>
-						<span class="text-secondary/50 text-md font-medium">Feb 2023 - Nov 2023</span>
-					</div>
-					<p class="text-secondary/80">
-						Development and support gym training platform for tracking training results
-						and managing training schedule. Perform optimisation for search engines
-						(SEO) and migrations to TypeScript (NextJs).
-					</p>
-				</li>
-
-				<li class="flex gap-2 flex-col md:flex-row">
-					<div class="min-w-72 flex flex-col">
-						<span class=" text-secondary/80 text-lg font-semibold">Frontend Engineer · Evolution</span>
-						<span class="text-secondary/50 text-md font-medium">Feb 2023 - Nov 2023</span>
-					</div>
-					<p class="text-secondary/80">
-						Development and support slot games keypad, support E2E locators (React TS); 
-						Fixing layout issues. Conduct demo presentations for stakeholders.
-					</p>
-				</li>
-
-				<li class="flex gap-2 flex-col md:flex-row">
-					<div class="min-w-72 flex flex-col">
-						<span class=" text-secondary/80 text-lg font-semibold">QA Engineer · NetEnt</span>
-						<span class="text-secondary/50 text-md font-medium">Sep 2021 - May 2022</span>
-					</div>
-					<p class="text-secondary/80">
-						Scope of responsibility: Manual testing; Development & Support E2E
-						autotests; Creation & support test documentation.
-					</p>
-				</li>
-
-			</ul>
-		</fieldset>
-
-		<div class="col-span-3 flex gap-4 flex-col md:flex-row">
-			<fieldset id="education" class="flex-1 pt-2 pb-4 px-4 border border-secondary rounded-md">
-				<legend class="px-2 text-secondary font-bold text-2xl">Education</legend>
-
-				<ul class="list-disc space-y-4">
-					<li class="flex gap-2 flex-col md:flex-row">
-						<span class="min-w-44  text-secondary/50 text-md font-medium">Jul 2021 - Nov 2021</span>
-						<p class="text-secondary/80">
-							Mate academy
-							Software Manual testing and Automation testing courses.
-						</p>
-					</li>
-
-					<li class="flex gap-2 flex-col md:flex-row">
-						<span class="min-w-44  text-secondary/50 text-md font-medium">Sep 2017 - Jun 2021</span>
-						<p class="text-secondary/80">
-							Kyiv National Technical University of Ukraine “Igor Sikorsky Kyiv Polytechnic Institute.
-							Bachelor's degree in field Electronics and telecommunications.
-						</p>
-					</li>
-				</ul>
-	
+	<fieldset class="pt-1 pb-4 px-4 border rounded-md">
+		<legend class="mb-2 px-2 text-2xl text-muted-foreground font-bold">Mykhailo Toporkov</legend>
+		<div class="grid gap-4 grid-cols-3">
+		
+			<fieldset id="about" class="h-fit pt-2 pb-4 px-4 border border-secondary rounded-md col-span-3 md:col-span-2">
+				<legend class="px-2 text-lg font-semibold">About</legend>
+				<p class="text-muted-foreground font-semibold">
+					Hi! I'm Mykhailo. I have over 3+ years of experience in the IT sphere. My journey began as a mere QA
+					engineer, and now I can proudly call myself a Full-stack Developer. My experience speaks for itself; I
+					have knowledge not only about developing products but also about testing them, which is a
+					significant advantage. I believe this background helps me make fewer bugs, or at least I hope so!
+					Throughout these years, I have worked with many technologies, some of which are listed below. My
+					main plan for the future is to continue growing and developing myself further as a developer. I hope
+					this small introduction helps you get to know me better.
+				</p>
 			</fieldset>
-			<fieldset id="certificates" class="flex-1 pt-2 pb-4 px-4 border border-secondary rounded-md">
-				<legend class="px-2 text-secondary font-bold text-2xl">Certificates</legend>
 	
+
+			<fieldset class="pt-1 pb-3 px-2 border rounded-md col-span-3 md:col-span-1">
+				<legend class="px-2 text-lg font-semibold">Socials</legend>
+					<ul class="flex flex-wrap flex-row pl-0 gap-3 md:pl-2 md:flex-col">
+						{socials.map(item => (
+							<li>
+								<a 
+									target="_blank"
+									href={item.href} 
+									title={item.title} 
+									class="group flex gap-2"
+									>
+									<item.icon />
+									<span class="hidden md:block g">{item.title}</span>
+								</a>
+							</li>
+						))}
+					</ul>
 			</fieldset>
+
 		</div>
-
-	</div>
+	</fieldset>
 </RootLayout>
+
+
